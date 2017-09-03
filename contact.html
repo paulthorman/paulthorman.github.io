@@ -1,21 +1,14 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact | Paul Thorman</title>
-    <link rel="stylesheet" type="text/css" href="reset.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <style>
-      body {
-            background-image: url("images/cloudy-day.png");
-      }
-    </style>
-
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
 <body>
-
-  <header id="header">
+  <header id="masthead">
     <div class="container">
       <a href="index.html" id="logo">Paul Thorman</a>
       <nav>
@@ -27,36 +20,41 @@
   </header>
 
   <div id="main-container" class="container">
-    <section class="main-section" style="margin-left:-3px">
+    <section class="main-section">
       <h1>Contact</h1>
 
-      <form id="contact-form">
+    <form id="contact-form">
+      <ul>
+          <li>
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
-
+            <input type="text" name="name" id="name" placeholder="John Smith" required="required">
+          </li>
+          <li>
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
-
+            <input type="text" name="email" id="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
             <label for="message">Message</label>
             <textarea id="message" name="message" placeholder="Write to me here..." required="required"></textarea>
-
-        <input type="submit">
+          </li>
+        </ul>
+        <input type="submit" name="submit">
       </form>
 
     </section>
 
-    <section class="sidebar" style="margin-right: -30px">
-        <div id="connect">
+    <section class="sidebar">
+      <div id="connect">
         <h2>Connect With Me</h2>
 
           <a href="https://github.com/paulthorman">
-          <img src="images/GitHub.png" alt="GitHub" style="width:42px;height:42px;border:0;">
+          <img src="images/GitHub.png" class="social" alt="GitHub">
 
           <a href="https://www.linkedin.com/in/paulthorman/">
-          <img src="images/linkedin.png" alt="LinkedIn" style="width:42px;height:42px;border:0;">
+          <img src="images/linkedin.png" class="social" alt="LinkedIn">
 
           <a href="https://stackoverflow.com/users/8437445/paulthorman">
-          <img src="images/stackoverflow.png" alt="Stack Overflow" style="width: 42px;height: 42px;border: 0;">
+          <img src="images/stackoverflow.png" class="social" alt="Stack Overflow">
           </a>
       </div>
     </section>
